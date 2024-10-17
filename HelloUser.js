@@ -16,7 +16,7 @@ export class HelloUser extends LitElement {
         who: {
           type: 'string',
           title: 'Who',
-          description: 'Who to say hello to'
+          description: 'Who to say hello to today'
         }
       }
     };
@@ -28,7 +28,7 @@ export class HelloUser extends LitElement {
   }
 
   render() {
-    return html`<p>Hello ${this.who}<p/>`;
+    return html`<p>Hello ${this.who}, Welcome!<p/>`;
   }
 }
 
